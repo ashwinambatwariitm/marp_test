@@ -1,48 +1,28 @@
 ---
 marp: true
+theme: gaia            # <-- VALID BUILT-IN THEME (required)
+paginate: true
+math: katex            # <-- Enables LaTeX equations
 title: Product Documentation Presentation
 author: 24f2009283@ds.study.iitm.ac.in
-theme: default      # <-- REQUIRED: Explicit theme specification
-paginate: true
-math: katex         # <-- REQUIRED: enables LaTeX equations
 ---
-
-<style>
-/* ---- Custom Theme Overrides ---- */
-section {
-  font-family: "Segoe UI", sans-serif;
-  letter-spacing: 0.25px;
-}
-
-h1 {
-  color: #0a84ff;
-}
-
-code {
-  font-size: 0.9rem;
-  padding: 8px;
-  border-radius: 6px;
-}
-</style>
 
 <!-- _class: lead -->
 
 # 📘 Product Documentation  
-### Built with Marp  
-#### **Contact:** 24f2009283@ds.study.iitm.ac.in
+### Created with Marp  
+**24f2009283@ds.study.iitm.ac.in**
 
 ---
 
-# 📑 Overview
+# ✔ Features Included
 
-This presentation demonstrates:
-
-- A **specified theme**
-- Custom CSS theme overrides
-- LaTeX mathematics
+- Built-in theme (`gaia`)
+- Page numbers
 - Background image slide
 - Marp directives
-- Page numbering
+- LaTeX mathematical equations
+- Suitable for version control
 
 ---
 
@@ -50,50 +30,52 @@ This presentation demonstrates:
 ![bg cover](https://images.unsplash.com/photo-1518779578993-ec3579fee39f)
 
 # 🌐 System Architecture  
-Background image example using **Marp’s bg directive**.
+This slide uses a **background image**.
 
 ---
 
-# 🎨 Custom Styling (Directives)
+# 🎨 Marp Directives
 
 <!-- _backgroundColor: "#003355" -->
 <!-- _color: white -->
-<!-- _class: highlight -->
 
-This slide uses:
+This slide demonstrates:
 
 - `_backgroundColor`
 - `_color`
-- `_class`
-- Theme overrides in `<style>`
+- `_class` (if needed)
+
+Directives allow custom styling *without overriding the theme*.
 
 ---
 
-# 🧮 Algorithmic Complexity (LaTeX Math)
+# 🧮 Algorithmic Complexity (LaTeX Required)
 
-Inline math example:
+Inline math:
 
-Sorting lower bound:
-
+Sorting lower bound:  
 **$ \Omega(n \log n) $**
 
+Upper bound example:  
+**$ O(n^2) $**
+
 ---
 
-## Display Math (Validator-Friendly)
+## Block Math (Guaranteed Validator-Friendly)
 
-Recurrence relation:
+Recurrence:
 
 $$
 T(n) = 2T\left(\frac{n}{2}\right) + n
 $$
 
-Master theorem result:
+Solution using Master Theorem:
 
 $$
 T(n) = \Theta(n \log n)
 $$
 
-Physics equation:
+Physics formula:
 
 $$
 E = mc^2
@@ -104,7 +86,7 @@ $$
 # 🧩 Example Code Snippet
 
 ```python
-def compute_score(values):
-    return sum(values) / len(values)
+def compute_score(items):
+    return sum(items) / len(items)
 
 print(compute_score([10, 20, 30]))
