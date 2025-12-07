@@ -1,85 +1,111 @@
 ---
 marp: true
-title: Product Documentation Overview
+title: Product Documentation Presentation
 author: 24f2009283@ds.study.iitm.ac.in
-theme: default
 paginate: true
-_paginate: true
-header: "**Product Documentation — v1.0**"
-footer: "© 2025 My Software Company"
+math: katex       # <-- IMPORTANT: Enables LaTeX equations
 ---
 
 <style>
-/* ---- Custom Marp Theme Styles ---- */
+/* ---- Custom Theme ---- */
 
 section {
   font-family: "Segoe UI", sans-serif;
   letter-spacing: 0.2px;
 }
 
-/* Title slide formatting */
 section.lead h1 {
-  color: #0a84ff;
   font-size: 2.8rem;
+  color: #0a84ff;
 }
 
-/* Code block customization */
 pre code {
   font-size: 1rem;
-  border-radius: 10px;
   padding: 10px;
-}
-
-/* Custom highlight color */
-strong {
-  color: #ff4f4f;
+  border-radius: 8px;
 }
 </style>
 
 <!-- _class: lead -->
 
 # 📘 Product Documentation  
-### Built with Marp  
-#### By: 24f2009283@ds.study.iitm.ac.in
+### Powered by Marp  
+#### 24f2009283@ds.study.iitm.ac.in
 
 ---
 
 # 📑 Introduction
 
-Welcome to the **Product Documentation Presentation**.  
-We use **Marp** for:
+This presentation demonstrates:
 
-- Version-controlled documentation  
-- Multi-format export (HTML, PDF, PPTX)  
-- Developer-friendly workflows  
-- Custom theming + Markdown simplicity  
-
----
-
-<!-- _backgroundColor: #003355 -->
-<!-- _color: #ffffff -->
-
-# 🔧 Why Marp?
-
-- Write once → export to any format  
-- Maintains structure in Git repositories  
-- Ideal for technical teams  
-- CLI + VS Code support  
+- Custom themes  
+- Background images  
+- KaTeX mathematical equations  
+- Marp directives  
+- Version-controlled slides  
 
 ---
 
-<!-- _class: lead -->
-<!-- _header: "" -->
-<!-- _footer: "" -->
+<!-- _backgroundColor: '#001f33' -->
+<!-- _color: white -->
+
+# 🔧 Why Use Marp?
+
+- Write documentation in **Markdown**  
+- Export to **HTML, PDF, PPTX**  
+- Fully compatible with **Git** workflows  
+
+---
+
+<!-- Background image slide -->
+
 ![bg cover](https://images.unsplash.com/photo-1518779578993-ec3579fee39f)
 
-# 🌐 System Architecture Overview
+# 🌐 System Architecture Diagram
 
-The above slide uses a **background image** from Unsplash.
+Background images enhance visual presentations.
 
 ---
 
-# 📂 Documentation Structure
+# 🎨 Styling with Directives
 
-Organize documentation as:
+<!-- _backgroundColor: '#f4f4f4' -->
+<!-- _color: '#222' -->
+<!-- _class: highlight -->
 
+Custom styles using:
+
+- `_backgroundColor`
+- `_color`
+- `_class`
+- inline `<style>` theme
+
+---
+
+# 🧮 Algorithmic Complexity (LaTeX Math)
+
+Inline math example:  
+Sorting complexity = $O(n \log n)$
+
+Block math:
+
+$$
+T(n) = 2T\left(\frac{n}{2}\right) + n
+$$
+
+Using Master Theorem:
+
+$$
+T(n) = O(n \log n)
+$$
+
+---
+
+# 🧩 Example Code Snippet
+
+```python
+def compute_score(data):
+    total = sum(data)
+    return total / len(data)
+
+print(compute_score([10, 20, 30]))
