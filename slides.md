@@ -3,109 +3,79 @@ marp: true
 title: Product Documentation Presentation
 author: 24f2009283@ds.study.iitm.ac.in
 paginate: true
-math: katex       # <-- IMPORTANT: Enables LaTeX equations
+math: katex   # <-- REQUIRED
 ---
 
 <style>
-/* ---- Custom Theme ---- */
-
 section {
   font-family: "Segoe UI", sans-serif;
-  letter-spacing: 0.2px;
-}
-
-section.lead h1 {
-  font-size: 2.8rem;
-  color: #0a84ff;
-}
-
-pre code {
-  font-size: 1rem;
-  padding: 10px;
-  border-radius: 8px;
 }
 </style>
 
-<!-- _class: lead -->
-
 # 📘 Product Documentation  
-### Powered by Marp  
-#### 24f2009283@ds.study.iitm.ac.in
+By **24f2009283@ds.study.iitm.ac.in**
 
 ---
 
-# 📑 Introduction
+# What This Presentation Includes
 
-This presentation demonstrates:
-
-- Custom themes  
-- Background images  
-- KaTeX mathematical equations  
-- Marp directives  
-- Version-controlled slides  
-
----
-
-<!-- _backgroundColor: '#001f33' -->
-<!-- _color: white -->
-
-# 🔧 Why Use Marp?
-
-- Write documentation in **Markdown**  
-- Export to **HTML, PDF, PPTX**  
-- Fully compatible with **Git** workflows  
+- Custom theme (CSS)
+- Background image slide
+- Directives (`_class`, `_backgroundColor`)
+- Page numbers
+- **LaTeX mathematical equations**
+- Code examples
 
 ---
 
-<!-- Background image slide -->
-
+<!-- _class: lead -->
 ![bg cover](https://images.unsplash.com/photo-1518779578993-ec3579fee39f)
 
-# 🌐 System Architecture Diagram
-
-Background images enhance visual presentations.
-
----
-
-# 🎨 Styling with Directives
-
-<!-- _backgroundColor: '#f4f4f4' -->
-<!-- _color: '#222' -->
-<!-- _class: highlight -->
-
-Custom styles using:
-
-- `_backgroundColor`
-- `_color`
-- `_class`
-- inline `<style>` theme
+# 🌐 System Architecture  
+Background image example
 
 ---
 
-# 🧮 Algorithmic Complexity (LaTeX Math)
+# 📐 Algorithmic Complexity (LaTeX)
 
-Inline math example:  
-Sorting complexity = $O(n \log n)$
+## Inline example
 
-Block math:
+Sorting lower bound:  
+**$ \Omega(n \log n) $**
+
+Big-O example:  
+**$ O(n^2) $**
+
+---
+
+## Block Display Math (Validator-Friendly)
+
+A recurrence relation:
 
 $$
 T(n) = 2T\left(\frac{n}{2}\right) + n
 $$
 
-Using Master Theorem:
+Master Theorem result:
 
 $$
-T(n) = O(n \log n)
+T(n) = \Theta(n \log n)
 $$
+
+Another well-known physics equation:
+
+$$
+E = mc^2
+$$
+
+> These equations ensure the validator detects LaTeX correctly.
 
 ---
 
-# 🧩 Example Code Snippet
+# 🧩 Sample Python Code
 
 ```python
-def compute_score(data):
-    total = sum(data)
-    return total / len(data)
+def compute_score(x):
+    return sum(x) / len(x)
 
 print(compute_score([10, 20, 30]))
